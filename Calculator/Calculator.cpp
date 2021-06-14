@@ -1,6 +1,8 @@
 #include <iostream>
 
 void simpleCalculator();
+void sweetsCalculator();
+void bmiCalculator();
 
 int main() {
 	int userChoice;
@@ -10,6 +12,7 @@ int main() {
 	std::cout << "2. Sweets calculator" << std::endl;
 	std::cout << "3. BMI calculator" << std::endl;
 	std::cin >> userChoice;
+	system("cls");
 	
 	switch (userChoice)
 	{
@@ -17,10 +20,10 @@ int main() {
 		simpleCalculator();
 		break;
 	case 2:
-		std::cout << "Sweets Calculator" << std::endl;
+		sweetsCalculator();
 		break;
 	case 3:
-		std::cout << "BMI Calculator "<< std::endl;
+		bmiCalculator();
 		break;
 	default:
 		std::cout << "Not valid operation!" << std::endl;
