@@ -1,35 +1,26 @@
 #include <iostream>
 
+void simpleCalculator();
+
 int main() {
-	float num1, num2;
-	char operation;
+	int userChoice;
 	std::cout << "**My first calculator**" << std::endl;
-	std::cout << "Please type an operation:" << std::endl;
-	std::cin >> num1 >> operation >> num2;
-
-	switch (operation)
+	std::cout << "Please, select a calculator:" << std::endl;
+	std::cout << "1. Simple calculator" << std::endl;
+	std::cout << "2. Sweets calculator" << std::endl;
+	std::cout << "3. BMI calculator" << std::endl;
+	std::cin >> userChoice;
+	
+	switch (userChoice)
 	{
-	case '+':
-		std::cout << num1 + num2 << std::endl;
+	case 1:
+		simpleCalculator();
 		break;
-	case '-':
-		std::cout << num1 - num2 << std::endl;
+	case 2:
+		std::cout << "Sweets Calculator" << std::endl;
 		break;
-	case '*':
-		std::cout << num1 * num2 << std::endl;
-		break;
-	case '/':
-		std::cout << num1 / num2 << std::endl;
-		break;
-	case '%':
-		bool isNum1Int, isNum2Int;
-		isNum1Int = ((int)num1 == num1);
-		isNum2Int = ((int)num2 == num2);
-
-		if (isNum1Int && isNum2Int)
-			std::cout << (int)num1 % (int)num2 << std::endl;
-		else
-			std::cout << "Not valid!";
+	case 3:
+		std::cout << "BMI Calculator "<< std::endl;
 		break;
 	default:
 		std::cout << "Not valid operation!" << std::endl;
