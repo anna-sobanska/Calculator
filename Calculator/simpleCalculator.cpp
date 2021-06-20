@@ -18,7 +18,8 @@ void simpleCalculator () {
 		std::cout << num1 * num2 << std::endl;
 		break;
 	case '/':
-		std::cout << num1 / num2 << std::endl;
+		if (num2 == 0) std::cout << "Don't divide by 0!";
+		else std::cout << num1 / num2 << std::endl;
 		break;
 	case '%':
 		bool isNum1Int, isNum2Int;
