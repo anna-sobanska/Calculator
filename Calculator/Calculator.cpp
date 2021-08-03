@@ -3,6 +3,8 @@
 void simpleCalculator();
 void sweetsCalculator();
 void bmiCalculator();
+void avgCalculator();
+
 
 int main() {
 	int userChoice;
@@ -11,6 +13,7 @@ int main() {
 	std::cout << "1. Simple calculator" << std::endl;
 	std::cout << "2. Sweets calculator" << std::endl;
 	std::cout << "3. BMI calculator" << std::endl;
+	std::cout << "4. Average calculator" << std::endl;
 	std::cin >> userChoice;
 	system("cls");
 	
@@ -24,6 +27,9 @@ int main() {
 		break;
 	case 3:
 		bmiCalculator();
+		break;
+	case 4:
+		avgCalculator();
 		break;
 	default:
 		std::cout << "Not valid operation!" << std::endl;

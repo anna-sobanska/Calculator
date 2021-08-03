@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="avgCalculator.cpp" />
     <ClCompile Include="bmiCalculator.cpp" />
     <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="simpleCalculator.cpp" />
