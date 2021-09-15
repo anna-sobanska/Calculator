@@ -5,7 +5,6 @@ void simpleCalculator();
 void sweetsCalculator();
 void bmiCalculator();
 void avgCalculator();
-void multiTable();
 
 int main() 
 {
@@ -16,7 +15,6 @@ int main()
 	cout << "2. Sweets calculator" << endl;
 	cout << "3. BMI calculator" << endl;
 	cout << "4. Average calculator" << endl;
-	cout << "5. Multiplication table" << endl;
 	cin >> userChoice;
 	system("cls");
 	
@@ -33,9 +31,6 @@ int main()
 		break;
 	case 4:
 		avgCalculator();
-		break;
-	case 5:
-		multiTable();
 		break;
 	default:
 		cout << "Not valid operation!" << endl;
@@ -133,14 +128,4 @@ void avgCalculator()
 
 	cout << "Sum = " << sum << endl;
 	cout << "Avg grade = " << sum / 3.0 << endl;
-}
-
-void multiTable() 
-{
-	for (int i = 1; i <= 10; i++) {
-		for (int j = 1; j <= 10; j++) {
-			cout << i << " = " << i * j << endl;
-		}
-		cout << endl;
-	}
 }
